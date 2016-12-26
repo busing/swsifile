@@ -547,4 +547,17 @@ public class FenlanFile {
 		raf.readFully(buffer);
 		return new String(buffer, "utf-8");
 	}
+	
+	
+	/**
+	 * 关闭randomAccessFile
+	 */
+	public void closeReader()
+	{
+		try {
+			this.raf.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
 }

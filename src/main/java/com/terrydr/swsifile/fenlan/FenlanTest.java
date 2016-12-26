@@ -8,5 +8,6 @@ public class FenlanTest {
 		FenlanFile ff=new FenlanFile(FENLAN);
 		ff.readFile();
 		ff.extractImages(FENLAN_SPLIT);
+		ff.closeReader();
 	}
 }
